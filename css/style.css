@@ -1,1 +1,8 @@
 /* Note there a few "reset" styles given in reset.css. Review those before you begin */
+header. page-header {
+    background: red;
+    display: flex;
+    height: 120px;
+    min-width: 120px;
+    align-items: center;
+    color: #fff;

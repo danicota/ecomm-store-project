@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="251" height="41" viewBox="0 0 251 41">
+  <g id="Group_20" data-name="Group 20" transform="translate(-251 -198)">
+    <rect id="Rectangle_24" data-name="Rectangle 24" width="251" height="41" rx="20.5" transform="translate(251 198)" fill="#faf9f9" opacity="0.83"/>
+    <path id="Icon_awesome-search" data-name="Icon awesome-search" d="M18.848,16.523,15.127,12.8a.9.9,0,0,0-.634-.261h-.608a7.76,7.76,0,1,0-1.344,1.344v.608a.9.9,0,0,0,.261.634l3.721,3.721a.892.892,0,0,0,1.265,0l1.056-1.056A.9.9,0,0,0,18.848,16.523ZM7.763,12.541a4.777,4.777,0,1,1,4.777-4.777A4.775,4.775,0,0,1,7.763,12.541Z" transform="translate(461.98 209)"/>
+    <path id="Path_11" data-name="Path 11" d="M2.76,0,2.74-13.74l-2.5-.02V-16.2H8.52v2.46l-2.48-.02L6.06,0ZM9.98,0V-16.2h7.04l.02,2.28-3.78-.02.02,4.32,2.9.02v2.28l-2.92-.02.02,5.1h3.78L17.08,0Zm7.7,0,3.2-8.66L17.8-16.2h3.12l1.92,4.66,1.62-4.66h2.78L24.28-7.9,27.52,0H24.44L22.32-5.1,20.46,0ZM30.44,0l-.02-13.74-2.5-.02V-16.2H36.2v2.46l-2.48-.02L33.74,0Z" transform="translate(268 228)" fill="#272729"/>
+  </g>
+</svg>

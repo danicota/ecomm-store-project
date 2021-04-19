@@ -56,7 +56,7 @@ a {
     align-items: center;
     padding: 0px 300px 0px 300px;
     background-color: var(--primary-color-3);
-    position: relative;
+    position: static;
     bottom: 0px;
 
 }
@@ -101,14 +101,15 @@ a {
 }
 
 .logo-img {
-    padding-top: 15px;
-    height: 150px;
+    max-width: 20%;
+    height: auto;
+    vertical-align: bottom;
 }
 
 .filter-options {
     display: flex;
     justify-content: flex-start;
-    padding-top: 15px;
+    padding: 10px;
 }
 
 .navigation {
@@ -117,7 +118,15 @@ a {
 }
 
 .product {
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    font-style: inherit;
+}
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto;
+background-color: lightgray;
+justify-content: center;
+padding: 15px;
 }

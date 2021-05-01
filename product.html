@@ -1,1 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenutz</title>
+    <meta name="Nuts supplier in Toronto" content="Nuts supplier in canada and Toronto">
+    <meta name="D.Schwarz" content="Daniela Schwarz">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="logo"><img class= "logo-img" src="https://raw.githubusercontent.com/danicota/ecomm-store-project/ec8a2e517475a1ac264cf06680c8387e3e8f7437/img/Asset%201.svg" alt="kenutz"><!-- Site logo --></a>
+
+      <!-- Navigation menu and toggle button (non-functional) -->
+      <nav aria-label="Primary" class="navigation">
+        <ul class="menu">
+          <li class="menu-li"><a href="#">Home</a></li>
+          <li class="menu-li"><a href="#">Products</a></li>
+          <li class="menu-li"><a href="#">About</a></li>
+          <li class="menu-li"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search for a product (non-functional) -->
+      <div class="top-container">
+      <form class="search">
+        <label>Search
+          <input type="search" name="find" id="find">
+        </label>
+        <button type="button"><span class="material-icons">search</span></button>
+      </form>
+
+      <!-- Additional links -->
+      <ul class="your-products">
+        <li><a href="#"><span class="material-icons" aria-label="Favourites">favorite</span></a></li>
+        <li><a href="#"><span class="material-icons" aria-label="Items in your cart">shopping_cart</span></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- here starts the main section of my store -->
+  <div class="wrapper">
+    <main class="products">
+      <!-- Filtering product form -->
+      <form class="filters">
+        <div class="filter-options">
+          <fieldset>
+            <legend>Kinds of nuts</legend>
+            <ul class="filter-list">
+              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Hazelnuts</label></li>
+              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">Almonds</label></li>
+              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Cashew</label></li>
+              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Pecan</label></li>
+              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Walnuts</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Sizes</legend>
+            <ol class="filter-list">
+              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">1 lb box</label></li>
+              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">2 lb box</label></li>
+              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">3 lb box</label></li>
+              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">4 lb box</label></li>
+              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">5 lb box</label></li>
+            </ol>
+          </fieldset>
+          <fieldset>
+            <legend>Ratings</legend>
+            <ul class="filter-list">
+              <li>
+                <input type="radio" name="rating" value="4" id="aboveFour" class="rating-radios">
+                <label for="aboveFour">
+                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="3" id="aboveThree" class="rating-radios">
+                <label for="aboveThree">
+                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="2" id="aboveTwo" class="rating-radios">
+                <label for="aboveTwo">
+                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="1" id="aboveOne" class="rating-radios">
+                <label for="aboveOne">
+                  <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset>
+          <label for="sort">Show</label>
+          <select name="sort" id="sort">
+            <option value="price-high">Price, highest to lowest</option>
+            <option value="price-low">Price, lowest to highest</option>
+            <option value="newest">Newest releases</option>
+          </select>
+        </fieldset>
+      </form>
+
+
+        <!-- Product 1 -->
+        <div class="grid-container">
+        <article class="product">
+          <header>
+            <img src="https://raw.githubusercontent.com/danicota/ecomm-store-project/master/img/hazelnuts-brown-nuts-open-68483.jpeg" alt="Product Image">
+            <h3>Hazelnuts</h3>
+            <data value="39"><del>$10.00</del> <ins>$9.00</ins></data>
+            <p>Come get your hazelnuts, they are on sale!!.</p>
+            <dl>
+              <dt>Rating</dt>
+              <dd>5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+            </dl>
+            <a href="#">see more</a>
+          </header>
+          <form>
+            <fieldset>
+              <legend>Sizes</legend>
+              <ol>
+                <li><label><input type="radio" name="size" value="1"> 1lb bag</label></li>
+                <li><label><input type="radio" name="size" value="2"> 2lb bag</label></li>
+                <li><label><input type="radio" name="size" value="13"> 13lb bag</label></li>
+              </ol>
+            </fieldset>
+          </form>
+          <footer>
+            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button type="button"><span class="material-icons">favorite</span></button>
+          </footer>
+        </article>
+      
+
+        <!-- Product 2 -->
+        <article class="product">
+          <header>
+            <img src="https://raw.githubusercontent.com/danicota/ecomm-store-project/master/img/almonds.jpg" alt="Product Image">
+            <h3>Almonds</h3>
+            <data value="39"><del>$20.00</del> <ins>$18.00</ins></data>
+            <p>10% sale on Almonds!</p>
+            <dl>
+              <dt>Rating</dt>
+              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+            </dl>
+            <a href="#">see more</a>
+          </header>
+          <form>
+            <fieldset>
+              <legend>Sizes</legend>
+              <ol>
+                <li><label><input type="radio" name="size" value="1"> 1lb bag</label></li>
+                <li><label><input type="radio" name="size" value="2"> 6lb bag</label></li>
+                <li><label><input type="radio" name="size" value="13"> 13lb bag</label></li>
+              </ol>
+            </fieldset>
+          </form>
+          <footer>
+            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button type="button"><span class="material-icons">favorite</span></button>
+          </footer>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product">
+          <header>
+            <img src="https://raw.githubusercontent.com/danicota/ecomm-store-project/master/img/cashew-cores-1549580_1920.jpg" alt="Product Image">
+            <h3>Cashews</h3>
+            <data value="39"><del>$30.00</del> <ins>$27.00</ins></data>
+            <p>Trade your cash for some delicious cashews.</p>
+            <dl>
+              <dt>Rating</dt>
+              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+            </dl>
+            <a href="#">see more</a>
+          </header>
+          <form>
+            <fieldset>
+              <legend>Sizes</legend>
+              <ol>
+                <li><label><input type="radio" name="size" value="1"> 1lb bag</label></li>
+                <li><label><input type="radio" name="size" value="6"> 6lb bag</label></li>
+                <li><label><input type="radio" name="size" value="13"> 13lb bag</label></li>
+              </ol>
+            </fieldset>
+          </form>
+          <footer>
+            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button type="button"><span class="material-icons">favorite</span></button>
+          </footer>
+        </article>
+  
+        <!-- Product 4 -->
+        <article class="product">
+          <header>
+            <img src="https://raw.githubusercontent.com/danicota/ecomm-store-project/master/img/pecans.jpg" alt="Product Image">
+            <h3>Pecan</h3>
+            <data value="39"><del>$40.00</del> <ins>$36.00</ins></data>
+            <p>Pack or peck of pecans</p>
+            <dl>
+              <dt>Rating</dt>
+              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+            </dl>
+            <a href="#">see more</a>
+          </header>
+          <form>
+            <fieldset>
+              <legend>Sizes</legend>
+              <ol>
+                <li><label><input type="radio" name="size" value="1"> 1lb bag</label></li>
+                <li><label><input type="radio" name="size" value="6"> 6lb bag</label></li>
+                <li><label><input type="radio" name="size" value="13"> 13lb bag</label></li>
+              </ol>
+            </fieldset>
+          </form>
+          <footer>
+            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button type="button"><span class="material-icons">favorite</span></button>
+          </footer>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product">
+          <header>
+            <img src="https://raw.githubusercontent.com/danicota/ecomm-store-project/master/img/walnuts.jpeg" alt="Product Image">
+            <h3>Walnuts</h3>
+            <data value="39"><del>$50.00</del> <ins>$45.00</ins></data>
+            <p>Anyway here's walnutwall</p>
+            <dl>
+              <dt>Rating</dt>
+              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+            </dl>
+            <a href="#">see more</a>
+          </header>
+          <form>
+            <fieldset>
+              <legend>Sizes</legend>
+              <ol>
+                <li><label><input type="radio" name="size" value="1"> 1lb bag</label></li>
+                <li><label><input type="radio" name="size" value="6"> 6lb bag</label></li>
+                <li><label><input type="radio" name="size" value="13"> 13lb bag</label></li>
+              </ol>
+            </fieldset>
+          </form>
+          <footer>
+            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button type="button"><span class="material-icons">favorite</span></button>
+          </footer>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product">
+          <header>
+            <img src="https://raw.githubusercontent.com/danicota/ecomm-store-project/master/img/brazil_nuts.jpg" alt="Product Image">
+            <h3>Brazil Nuts</h3>
+            <data value="39"><del>$60.00</del> <ins>$48.00</ins></data>
+            <p>Excotic nuts at a discount</p>
+            <dl>
+              <dt>Rating</dt>
+              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+            </dl>
+            <a href="#">see more</a>
+          </header>
+          <form>
+            <fieldset>
+              <legend>Sizes</legend>
+              <ol>
+                <li><label><input type="radio" name="size" value="1"> 1lb bag</label></li>
+                <li><label><input type="radio" name="size" value="2"> 6lb bag</label></li>
+                <li><label><input type="radio" name="size" value="3"> 13lb bag</label></li>
+              </ol>
+            </fieldset>
+          </form>
+          <footer>
+            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button type="button"><span class="material-icons">favorite</span></button>
+          </footer>
+        </article>
+      </section>
+      </div>
+
+      <nav aria-label="Pagination" class="pagination">
+        <p>1-6 of 23 products found</p>
+        <ol class="pages">
+          <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
+          <li><a href="#" aria-label="Page 2">2</a></li>
+          <li><a href="#" aria-label="Page 3">3</a></li>
+          <li><a href="#" aria-label="Page 4">4</a></li>
+          <li><a href="#" aria-label="Page 5">5</a></li>
+        </ol>
+      </nav>
+    </main>
+  </div>
+
+  <div class="wrapper">
+    <footer class="page-footer">
+      <ul class="social">
+        <li><a href="https://www.facebook.com"><span class="material-icons">facebook</span></a></li>
+        <li><a href="https://www.instagram.com"><span class="material-icons">photo_camera</span></a></li>
+        <li><a href="https://www.twitter.com"><span class="material-icons">flutter_dash</span></a></li>
+      </ul>
+      <nav aria-label="Legal">
+        <ul class="legal">
+          <li><a href="">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility Policy</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; Copyright, 2021 for Kenutz.</p>
+    </footer>
+  </div>
+  </body>
+</html>
 

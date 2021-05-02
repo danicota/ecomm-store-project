@@ -7,7 +7,50 @@
     margin: 0 auto;
     grid-gap: 1em;
   }
-  .bigimg {
-    grid-column: span 3;
-  }
 
+.bigimg {
+  grid-column: span 3;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #16398c;
+  height: 15vh;
+}
+header nav {
+  display: flex;
+  width: 75%
+}
+.search {
+  width: 25%;
+}
+header nav img {
+  height: 20vh;
+  width: 10%;
+}
+
+.navul {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header nav li {
+  display:inline-block;
+  color: white;
+}
+
+.search label {
+  color: white;
+}
+
+.mynuts-images {
+  padding-top: 15px;
+}
+
+.mynuts-info {
+  width: 100;
+  text-align: center;
+}

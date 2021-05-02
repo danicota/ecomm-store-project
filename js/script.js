@@ -107,5 +107,25 @@ products.forEach((product) => {
     // console.log(productTable)
 });
 
-const filter
+let theFilteredResult = {
+  query: ``
+}
+
+let filteredProductresults = document.
+const filteredProductTable = function(products) {
+
+}
+
+const SortFilter = function() {
+  let filterNuts = products.filter(function(product){
+
+    let highPrice = product.nutPrice
+    let lowPrice = product.lowPrice
+
+    return (highPrice.include(theFilteredResult.query))
+
+  })
+
+
+}
 

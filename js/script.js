@@ -6,6 +6,7 @@ let products = [
         nutPrice: 9.00,
         nutDescription: 'Come get your hazelnuts, they are on sale!!',
         nutRating: 5,
+        nutSize: [1,2,3],
     },
     {
         nutKind: 'Almonds',
@@ -14,6 +15,7 @@ let products = [
         nutPrice: 18.00,
         nutDescription: '10% sale oon almonds!',
         nutRating: 4.4, 
+        nutSize: [2,3],
     },
     {
         nutKind: 'Cashews',
@@ -22,6 +24,7 @@ let products = [
         nutPrice: 27.00,
         nutDescription: 'Trade your cash for some delicious cashews.',
         nutRating: 4.4,
+        nutSize: [3],
     },
     {
         nutKind: 'Pecan',
@@ -29,7 +32,8 @@ let products = [
         oldPrice: 40.00,
         nutPrice: 36.00,
         nutDescription: 'Pack or peck of pecans.',
-        nutRating: 4.4,   
+        nutRating: 4.4, 
+        nutSize: [7],  
     },
     {
         nutKind: 'Walnuts',
@@ -37,7 +41,8 @@ let products = [
         oldPrice: 50.00,
         nutPrice: 45.00,
         nutDescription: 'Anyway heres walnutwall',
-        nutRating: 4.4,       
+        nutRating: 4.4,
+        nutSize: [2,3,4],       
     },
     {
         nutKind: 'Brazil Nuts',
@@ -45,7 +50,8 @@ let products = [
         oldPrice: 60.00,
         nutPrice: 48.00,
         nutDescription: 'Exotic nuts at a discount',
-        nutRating: 4.4,   
+        nutRating: 4.4, 
+        nutSize: [1,2,3],  
     }
 ];
 
@@ -58,12 +64,25 @@ products.forEach((product) => {
     let firstProduct = document.createElement(`article`);
     firstProduct.classList.add(`product`);
 
+    let productSize = product.nutSize;
+    // console.log(product.nutSize)
+
+    
+
+    let nutsizes = ``
+    for (let i=0; i < productSize.length; i++)
+    {
+      let list = `<li><label><input type="radio" name="size" value="1"> ${productSize[i]} lb bag</label></li>`
+      nutsizes += list;
+    }
+    
+
     firstProduct.innerHTML = `
             <header>
             <img src="img/${product.productImage}" alt="Product Image">
-            <h3>Hazelnuts</h3>
-            <data value="39"><del>$10.00</del> <ins>$9.00</ins></data>
-            <p>Come get your hazelnuts, they are on sale!!.</p>
+            <h3>${product.nutKind}</h3>
+            <data value="39"><del>$${product.oldPrice}</del> <ins>$${product.nutPrice}</ins></data>
+            <p>${product.nutDescription}</p>
             <dl>
               <dt>Rating</dt>
               <dd>5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
@@ -74,9 +93,7 @@ products.forEach((product) => {
             <fieldset>
               <legend>Sizes</legend>
               <ol>
-                <li><label><input type="radio" name="size" value="1"> 1lb bag</label></li>
-                <li><label><input type="radio" name="size" value="2"> 2lb bag</label></li>
-                <li><label><input type="radio" name="size" value="13"> 13lb bag</label></li>
+                ${nutsizes}
               </ol>
             </fieldset>
           </form>
@@ -87,6 +104,8 @@ products.forEach((product) => {
     `
 
     productTable.appendChild(firstProduct);
-    console.log(productTable)
+    // console.log(productTable)
 });
+
+const filter
 

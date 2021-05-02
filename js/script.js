@@ -59,13 +59,18 @@ let products = [
 
 let productTable = document.querySelector('.grid-container')
 
-products.forEach((product) => {
+const sortFilter = document.querySelector(`#sort`);
+
+const productToTable = function(product) {
+  productTable.innerHTML = ``
+    
+  product.forEach((product) => {
 
     let firstProduct = document.createElement(`article`);
     firstProduct.classList.add(`product`);
 
     let productSize = product.nutSize;
-    // console.log(product.nutSize)
+  
 
     
 
@@ -104,28 +109,39 @@ products.forEach((product) => {
     `
 
     productTable.appendChild(firstProduct);
-    // console.log(productTable)
 });
 
-let theFilteredResult = {
-  query: ``
 }
 
-let filteredProductresults = document.
-const filteredProductTable = function(products) {
+let productarray = []
+sortFilter.addEventListener(`click`, function() {
+  const highLowFilter = (productarray) => {
+    const productSort = (i,j) => {
+      return j.nutPrice - i.nutPrice
+    }
+    products.sort(productSort)
+    console.log(products)
+    productToTable(products);
+  }
 
-}
+  const lowHighFilter = (productarray) => {
+    const productSort = (i,j) => {
+      return i.nutPrice - j.nutPrice
+    }
+    products.sort(productSort)
+    console.log(products)
+    productToTable(products);
+  }
 
-const SortFilter = function() {
-  let filterNuts = products.filter(function(product){
+  if (sortFilter.selectedIndex == 0) {
+    highLowFilter(products)
+  }
 
-    let highPrice = product.nutPrice
-    let lowPrice = product.lowPrice
+  else if (sortFilter.selectedIndex == 1) {
+    lowHighFilter(products)
+  }
 
-    return (highPrice.include(theFilteredResult.query))
-
-  })
+})
 
 
-}
-
+productToTable(products);

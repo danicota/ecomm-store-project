@@ -10,7 +10,7 @@ let products = [
     },
     {
         nutKind: 'Almonds',
-        productImage: `hazelnuts-brown-nuts-open-68483.jpeg`,
+        productImage: `almonds.jpeg`,
         oldPrice: 20.00,
         nutPrice: 18.00,
         nutDescription: '10% sale oon almonds!',
@@ -19,7 +19,7 @@ let products = [
     },
     {
         nutKind: 'Cashews',
-        productImage: `hazelnuts-brown-nuts-open-68483.jpeg`,
+        productImage: `cashew-cores-1549580_1920.jpeg`,
         oldPrice: 30.00,
         nutPrice: 27.00,
         nutDescription: 'Trade your cash for some delicious cashews.',
@@ -28,7 +28,7 @@ let products = [
     },
     {
         nutKind: 'Pecan',
-        productImage: `hazelnuts-brown-nuts-open-68483.jpeg`,
+        productImage: `pecans.jpeg`,
         oldPrice: 40.00,
         nutPrice: 36.00,
         nutDescription: 'Pack or peck of pecans.',
@@ -37,7 +37,7 @@ let products = [
     },
     {
         nutKind: 'Walnuts',
-        productImage: `hazelnuts-brown-nuts-open-68483.jpeg`,
+        productImage: `walnuts.jpeg`,
         oldPrice: 50.00,
         nutPrice: 45.00,
         nutDescription: 'Anyway heres walnutwall',
@@ -46,7 +46,7 @@ let products = [
     },
     {
         nutKind: 'Brazil Nuts',
-        productImage: `hazelnuts-brown-nuts-open-68483.jpeg`,
+        productImage: `brazil_nuts.jpeg`,
         oldPrice: 60.00,
         nutPrice: 48.00,
         nutDescription: 'Exotic nuts at a discount',

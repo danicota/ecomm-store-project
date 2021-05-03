@@ -84,7 +84,7 @@ const productToTable = function(product) {
 
     firstProduct.innerHTML = `
             <header>
-            <img src="img/${product.productImage}" alt="Product Image">
+            <img class = "productImage" src="img/${product.productImage}" alt="Product Image">
             <h3>${product.nutKind}</h3>
             <data value="39"><del>$${product.oldPrice}</del> <ins>$${product.nutPrice}</ins></data>
             <p>${product.nutDescription}</p>

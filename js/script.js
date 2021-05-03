@@ -15,7 +15,7 @@ let products = [
         nutPrice: 18.00,
         nutDescription: '10% sale oon almonds!',
         nutRating: 4.4, 
-        nutSize: [2,3],
+        nutSize: [1,2,3],
     },
     {
         nutKind: 'Cashews',
@@ -24,7 +24,7 @@ let products = [
         nutPrice: 27.00,
         nutDescription: 'Trade your cash for some delicious cashews.',
         nutRating: 4.4,
-        nutSize: [3],
+        nutSize: [1,2,3],
     },
     {
         nutKind: 'Pecan',
@@ -33,7 +33,7 @@ let products = [
         nutPrice: 36.00,
         nutDescription: 'Pack or peck of pecans.',
         nutRating: 4.4, 
-        nutSize: [7],  
+        nutSize: [1,2,3],  
     },
     {
         nutKind: 'Walnuts',
@@ -42,7 +42,7 @@ let products = [
         nutPrice: 45.00,
         nutDescription: 'Anyway heres walnutwall',
         nutRating: 4.4,
-        nutSize: [2,3,4],       
+        nutSize: [1,2,3],       
     },
     {
         nutKind: 'Brazil Nuts',

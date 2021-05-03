@@ -128,7 +128,7 @@ a {
 }
 .grid-container {
 display: grid;
-grid-template-columns: auto;
+grid-template-columns: auto auto auto;
 background-color: lightgray;
 justify-content: center;
 padding: 15px;
